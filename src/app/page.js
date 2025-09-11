@@ -15,7 +15,7 @@ export default function LandingPage() {
           Team Update Tracker
         </h1>
         <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-xl mx-auto">
-          Elevate your team's workflow with a simple, powerful, and collaborative update tracking system. Organize tasks, monitor progress, and get things done—together.
+          Elevate your teams workflow with a simple, powerful, and collaborative update tracking system. Organize tasks, monitor progress, and get things done—together.
         </p>
         <div className="pt-4">
           <Link href="/login" passHref>
