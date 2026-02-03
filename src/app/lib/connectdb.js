@@ -7,7 +7,7 @@ const connectDB = async () => {
     try {
         if (mongoose.connections[0].readyState) {
             // Use current db connection
-            console.log('database already connected');
+            // console.log('database already connected');
             return;
         }
         // Use new db connection
