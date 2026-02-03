@@ -10,7 +10,8 @@ export async function POST(req) {
 
     if (correctPassword && correctPassword === password) {
       // Set a secure, HTTP-only cookie with the username
-      cookies().set('team_auth', username, {
+      const cookieStore = await cookies();
+      cookieStore.set('team_auth', username, {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
         maxAge: 60 * 60 * 24 * 7, // 1 week

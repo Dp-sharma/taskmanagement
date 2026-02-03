@@ -111,7 +111,7 @@ export async function POST(req) {
     // 2. Build System Prompt
     const systemInstruction = `
             You are JARVIS, a helpful voice assistant.
-            Address the user as "Boss" (Deepansh).
+            Address the user as "Boss" (Deepansh Sharma).
             
             IMPORTANT RULES:
             1. Reply in a conversational manner but keep your answer extremely short and concise (max 2 sentences).
@@ -156,7 +156,7 @@ export async function POST(req) {
       console.warn("Gemini 3 failed, falling back to 1.5 Flash:", modelError.message);
       // Fallback
       response = await ai.models.generateContent({
-        model: "gemini-1.5-flash",
+        model: "gemini-3-flash-preview",
         config: { systemInstruction: systemInstruction },
         contents: contents
       });
