@@ -11,7 +11,7 @@ export default function AssistantPage() {
                         AI Personal Assistant
                     </h1>
                     <p className="text-xl text-gray-300">
-                        Your voice-controlled task manager. "Jarvis" is ready to help.
+                        Your voice-controlled task manager. Jarvis is ready to help.
                     </p>
                 </div>
 
@@ -24,9 +24,9 @@ export default function AssistantPage() {
                         <h2 className="text-2xl font-semibold">How to use:</h2>
                         <ul className="text-gray-400 text-left space-y-2 list-disc list-inside">
                             <li>Click the microphone button (bottom right)</li>
-                            <li>Say <strong>"Create a task to buy groceries"</strong></li>
-                            <li>Say <strong>"List my pending tasks"</strong></li>
-                            <li>Say <strong>"Mark 'buy groceries' as done"</strong></li>
+                            <li>Say <strong>Create a task to buy groceries</strong></li>
+                            <li>Say <strong>List my pending tasks</strong></li>
+                            <li>Say <strong>Mark buy groceries as done</strong></li>
                         </ul>
                     </div>
                 </div>
