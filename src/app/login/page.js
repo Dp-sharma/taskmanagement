@@ -23,7 +23,7 @@ export default function LoginPage() {
     if (res.ok) {
       // Redirect to the dashboard or the previously requested page
       const searchParams = new URLSearchParams(window.location.search);
-      const redirect = searchParams.get('redirect') || '/app';
+      const redirect = searchParams.get('redirect') || '/dashboard';
       router.push(redirect);
     } else {
       const data = await res.json();

@@ -22,6 +22,10 @@ const ChatHistorySchema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    title: {
+        type: String,
+        default: "New Session"
+    },
     messages: [MessageSchema],
     lastActivity: {
         type: Date,
